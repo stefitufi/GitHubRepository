@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/image_rl"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:padding="2dp"
+        android:foregroundGravity="center"
+        android:layout_alignParentEnd="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/avatar_iv"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+            app:civ_border_width="0dp" />
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatar_iv"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+            android:maxLength="10"
+            android:text="Nma"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/full_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/login_tv"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/login_tv"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+            android:maxLength="17"
+            android:text="Nma"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:layout_alignRight="@id/image_rl">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptions_tv"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_tv"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:alpha="0.7"
+            android:padding="2dp"
+            android:text="Dos"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/email_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_below="@+id/descriptions_tv"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/forks_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:foregroundGravity="center"
+                android:alpha="0.38"
+                android:src="@drawable/ic_fork"/>
+            <TextView
+                android:id="@+id/forks_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:text="10"
+                android:textColor="@color/colorForkStart"
+                android:layout_marginLeft="1dp"
+                android:alpha="0.7"/>
+
+            <ImageView
+                android:id="@+id/start_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:foregroundGravity="center"
+                android:alpha="0.38"
+                android:src="@drawable/ic_start"
+                android:layout_marginLeft="4dp"/>
+            <TextView
+                android:id="@+id/start_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:text="10"
+                android:textColor="@color/colorForkStart"
+                android:layout_marginLeft="1dp"
+                android:alpha="0.7"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

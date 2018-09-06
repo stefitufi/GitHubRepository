@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- String general -->
+    <string name="app_name">Github User</string>
+    <string name="conexion">No se logró cargar la información</string>
+    <string name="loading">Cargando...</string>
+
+    <!-- String Transitions -->
+    <string name="transition_view">transition_view</string>
+    <string name="string_todo">TODO</string>
+
+    <!-- String Name Activityt -->
+    <string name="title_first">Github Repository</string>
+    <string name="title_second">Repositories</string>
+</resources>

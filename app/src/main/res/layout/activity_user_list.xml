@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_srl"
+    tools:context=".activities.GitHubListActivity">
+
+    <ListView
+        android:id="@+id/user_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</android.support.v4.widget.SwipeRefreshLayout>
